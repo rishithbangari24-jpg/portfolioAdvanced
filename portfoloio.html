@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bangari Rishith — Frontend Developer specializing in HTML, CSS, JavaScript and responsive web experiences." />
+  <title>Bangari Rishith — Frontend Developer</title>
+
+  <link rel="stylesheet" href="portfoloio.css" />
+  <link rel="stylesheet" href="portfoloioanimations.css" />
+  <link rel="stylesheet" href="portfoloiolayout.css" />
+</head>
+<body>
+
+  <div class="bg-orb bg-orb--1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--2" aria-hidden="true"></div>
+
+  <div class="page-transition-overlay" id="pageTransition" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav__logo">
+      BR<span>.</span>
+    </a>
+
+    <ul class="nav__links" id="navLinks" role="list">
+      <li><a href="#about"    class="nav__link" data-section="about">About</a></li>
+      <li><a href="#education" class="nav__link" data-section="education">Education</a></li>
+      <li><a href="#projects" class="nav__link" data-section="projects">Projects</a></li>
+      <li><a href="#skills"   class="nav__link" data-section="skills">Skills</a></li>
+      <li><a href="#contact"  class="nav__link btn btn--primary" style="padding: 0.5rem 1.25rem;">Hire Me</a></li>
+    </ul>
+
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="page">
+
+    <section class="hero" id="hero" aria-label="Introduction">
+
+      <div class="hero__grid-deco" aria-hidden="true">
+        <div class="hero__grid-deco-col"></div>
+        <div class="hero__grid-deco-col"></div>
+        <div class="hero__grid-deco-col"></div>
+        <div class="hero__grid-deco-col"></div>
+        <div class="hero__grid-deco-col"></div>
+        <div class="hero__grid-deco-col"></div>
+        <div class="hero__grid-deco-col"></div>
+        <div class="hero__grid-deco-col"></div>
+        <div class="hero__grid-deco-col"></div>
+        <div class="hero__grid-deco-col"></div>
+        <div class="hero__grid-deco-col"></div>
+        <div class="hero__grid-deco-col"></div>
+      </div>
+
+      <div class="hero__content container">
+        <div class="hero__eyebrow">
+          <span class="hero__eyebrow-line" aria-hidden="true"></span>
+          Frontend Developer &amp; MCA Student
+          <span class="hero__eyebrow-line" aria-hidden="true"></span>
+        </div>
+
+        <h1 class="hero__name">
+          <span class="hero__name-first">Bangari</span>
+          <span class="hero__name-last shimmer-text">Rishith</span>
+        </h1>
+
+        <p class="hero__role">
+          HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; Bootstrap &nbsp;·&nbsp; REST APIs
+        </p>
+
+        <p class="hero__desc">
+          Passionate about crafting responsive, visually immersive web experiences with
+          clean, efficient code and seamless user journeys.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">
+            View Projects
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="mailto:rishithbangari24@gmail.com" class="btn btn--outline">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <div class="stats" role="region" aria-label="Quick stats">
+      <div class="stats__item reveal">
+        <span class="stats__value" data-count="4">0</span>
+        <span class="stats__label">Projects Built</span>
+      </div>
+      <div class="stats__item reveal">
+        <span class="stats__value" data-count="7">0</span>
+        <span class="stats__label">Tech Skills</span>
+      </div>
+      <div class="stats__item reveal">
+        <span class="stats__value" data-count="1">0</span>
+        <span class="stats__label">Certification</span>
+      </div>
+      <div class="stats__item reveal">
+        <span class="stats__value" data-suffix="+">2</span>
+        <span class="stats__label">Years Studying</span>
+      </div>
+    </div>
+
+    <section class="section" id="about" aria-label="About me">
+      <div class="container">
+        <div class="about__grid">
+
+          <div class="about__visual reveal reveal--left">
+            <div class="about__avatar-wrap">
+              <div class="about__avatar-frame">
+                <span class="about__avatar-initials" aria-label="Initials BR">BR</span>
+              </div>
+              <div class="about__corner about__corner--tl" aria-hidden="true"></div>
+              <div class="about__corner about__corner--tr" aria-hidden="true"></div>
+              <div class="about__corner about__corner--bl" aria-hidden="true"></div>
+              <div class="about__corner about__corner--br" aria-hidden="true"></div>
+            </div>
+
+            <div class="about__info-list" role="list">
+              <div class="about__info-item" role="listitem">
+                <span class="about__info-key">Location</span>
+                <span class="about__info-val">Hyderabad, India</span>
+              </div>
+              <div class="about__info-item" role="listitem">
+                <span class="about__info-key">Degree</span>
+                <span class="about__info-val">MCA (Pursuing)</span>
+              </div>
+              <div class="about__info-item" role="listitem">
+                <span class="about__info-key">Email</span>
+                <span class="about__info-val">rishithbangari24@gmail.com</span>
+              </div>
+              <div class="about__info-item" role="listitem">
+                <span class="about__info-key">Phone</span>
+                <span class="about__info-val">+91 81253 07538</span>
+              </div>
+              <div class="about__info-item" role="listitem">
+                <span class="about__info-key">Status</span>
+                <span class="about__info-val u-gold">Available for work</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <span class="section__label">About me</span>
+            <h2 class="section__title">Turning ideas into<br><em>elegant interfaces</em></h2>
+            <div class="divider" aria-hidden="true"></div>
+
+            <p style="color: var(--clr-text-muted); line-height: 1.9; margin-bottom: 1.5rem;">
+              I'm a passionate frontend developer currently pursuing my Master of Computer Applications at
+              St John's PG College, Hyderabad. With a strong foundation in web technologies, I create
+              visually immersive digital experiences that are as functional as they are beautiful.
+            </p>
+            <p style="color: var(--clr-text-muted); line-height: 1.9; margin-bottom: 2rem;">
+              My journey in web development began with my love for design — translating creative visions
+              into code that feels alive. I thrive on the intersection of aesthetics and technology,
+              ensuring every pixel and interaction serves a purpose.
+            </p>
+
+            <div style="display:flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="https://www.linkedin.com/in/bangari-rishith-86610937b"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="btn btn--outline">
+                LinkedIn ↗
+              </a>
+              <a href="mailto:rishithbangari24@gmail.com" class="btn btn--primary">
+                Say Hello
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="education" aria-label="Education">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: var(--space-lg);">
+          <span class="section__label">Education</span>
+          <h2 class="section__title">Academic <em>Journey</em></h2>
+        </div>
+
+        <div class="education__timeline reveal-stagger" role="list">
+
+          <article class="edu-card" role="listitem">
+            <div class="edu-card__dot" aria-hidden="true"></div>
+            <div class="edu-card__header">
+              <div>
+                <h3 class="edu-card__degree">Master of Computer Applications</h3>
+                <p class="edu-card__institution">St John's PG College, Chengicharla, Hyderabad</p>
+              </div>
+              <span class="edu-card__period">Nov 2025 – May 2027</span>
+            </div>
+            <div class="edu-card__meta">
+              <span class="tag tag--active">Pursuing</span>
+              <span class="tag">MCA</span>
+            </div>
+          </article>
+
+          <article class="edu-card" role="listitem">
+            <div class="edu-card__dot" aria-hidden="true"></div>
+            <div class="edu-card__header">
+              <div>
+                <h3 class="edu-card__degree">Bachelor's in Computer Science</h3>
+                <p class="edu-card__institution">Nishitha Degree College, Nizamabad</p>
+              </div>
+              <span class="edu-card__period">Aug 2022 – May 2025</span>
+            </div>
+            <div class="edu-card__meta">
+              <span class="tag">CGPA: 7.8</span>
+              <span class="tag">B.Sc CS</span>
+            </div>
+          </article>
+
+          <article class="edu-card" role="listitem">
+            <div class="edu-card__dot" aria-hidden="true"></div>
+            <div class="edu-card__header">
+              <div>
+                <h3 class="edu-card__degree">Intermediate — MPC</h3>
+                <p class="edu-card__institution">SR Junior College, Nizamabad</p>
+              </div>
+              <span class="edu-card__period">Jun 2020 – Apr 2022</span>
+            </div>
+            <div class="edu-card__meta">
+              <span class="tag">CGPA: 5.7</span>
+              <span class="tag">MPC</span>
+            </div>
+          </article>
+
+          <article class="edu-card" role="listitem">
+            <div class="edu-card__dot" aria-hidden="true"></div>
+            <div class="edu-card__header">
+              <div>
+                <h3 class="edu-card__degree">Secondary School Education</h3>
+                <p class="edu-card__institution">Indrani High School, Nizamabad</p>
+              </div>
+              <span class="edu-card__period">Jun 2019 – Mar 2020</span>
+            </div>
+            <div class="edu-card__meta">
+              <span class="tag">CGPA: 9.8</span>
+              <span class="tag u-gold" style="border-color: var(--clr-gold); color: var(--clr-gold);">Top Score ★</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-label="Projects">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: var(--space-lg);">
+          <span class="section__label">Projects</span>
+          <h2 class="section__title">Built with <em>purpose</em></h2>
+        </div>
+
+        <div class="projects__grid reveal-stagger">
+
+          <article class="project-card project-card--featured">
+            <div>
+              <div class="project-card__number">01 — Featured</div>
+              <h3 class="project-card__title">TreasureDiamond</h3>
+              <p class="project-card__desc">
+                An immersive jewellery showcase website that invites users into the elegant
+                world of diamond craftsmanship. Built as my first fully independent project —
+                a testament to learning by doing, combining design sensibility with structured HTML &amp; CSS.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">Responsive</span>
+              </div>
+            </div>
+            <div class="project-card__footer" style="border: none; padding-top: 0; flex-direction: column; align-items: flex-start; gap: 0.75rem;">
+              <a href="https://treasurediamond.ccbp.tech/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="project-card__link">
+                View Live Project →
+              </a>
+              <div style="width: 100%; height: 120px; border-radius: var(--radius-sm); background: linear-gradient(135deg, rgba(201,153,58,0.15), rgba(232,201,122,0.05)); border: 1px solid var(--clr-border); display: flex; align-items: center; justify-content: center; font-family: var(--ff-display); font-size: 2rem; color: var(--clr-gold); opacity: 0.6;">
+                💎 TreasureDiamond
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__number">02</div>
+            <h3 class="project-card__title">Wikipedia Search</h3>
+            <p class="project-card__desc">
+              An interactive search app fetching real-time Wikipedia data via the Fetch API.
+              Asynchronous JS handles live results as you type.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Fetch API</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://wikiproject3939.ccbp.tech/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="project-card__link">
+                Live Demo →
+              </a>
+              <span class="tag">REST API</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__number">03</div>
+            <h3 class="project-card__title">Country Population</h3>
+            <p class="project-card__desc">
+              Dynamic country-population lookup with real-time filtering via input events,
+              REST API integration, and optimized DOM rendering.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">REST API</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://population3939.ccbp.tech/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="project-card__link">
+                Live Demo →
+              </a>
+              <span class="tag">DOM</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__number">04</div>
+            <h3 class="project-card__title">Todos Web App</h3>
+            <p class="project-card__desc">
+              A task management application with dynamic add/delete functionality,
+              real-time DOM manipulation, and a responsive, accessible interface.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">DOM</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://todolist3939.ccbp.tech/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="project-card__link">
+                Live Demo →
+              </a>
+              <span class="tag">Events</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="skills" aria-label="Skills">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: var(--space-lg);">
+          <span class="section__label">Skills</span>
+          <h2 class="section__title">Tools &amp; <em>Technologies</em></h2>
+        </div>
+
+        <div class="skills__grid reveal-stagger">
+
+          <div class="skill-category">
+            <span class="skill-category__icon" aria-hidden="true">🎨</span>
+            <h3 class="skill-category__name">Frontend</h3>
+            <div class="skill-item">
+              <span class="skill-item__name">HTML5</span>
+              <div style="flex: 1; padding-left: 1rem;">
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="95"></div></div>
+              </div>
+              <span class="skill-item__level">Expert</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__name">CSS3</span>
+              <div style="flex: 1; padding-left: 1rem;">
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="90"></div></div>
+              </div>
+              <span class="skill-item__level">Expert</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__name">JavaScript</span>
+              <div style="flex: 1; padding-left: 1rem;">
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="75"></div></div>
+              </div>
+              <span class="skill-item__level">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__name">WordPress</span>
+              <div style="flex: 1; padding-left: 1rem;">
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="65"></div></div>
+              </div>
+              <span class="skill-item__level">Intermediate</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <span class="skill-category__icon" aria-hidden="true">⚡</span>
+            <h3 class="skill-category__name">Frameworks &amp; APIs</h3>
+            <div class="skill-item">
+              <span class="skill-item__name">Bootstrap</span>
+              <div style="flex: 1; padding-left: 1rem;">
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="88"></div></div>
+              </div>
+              <span class="skill-item__level">Expert</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__name">REST APIs</span>
+              <div style="flex: 1; padding-left: 1rem;">
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="78"></div></div>
+              </div>
+              <span class="skill-item__level">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__name">Fetch API</span>
+              <div style="flex: 1; padding-left: 1rem;">
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="80"></div></div>
+              </div>
+              <span class="skill-item__level">Proficient</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <span class="skill-category__icon" aria-hidden="true">🔧</span>
+            <h3 class="skill-category__name">Languages &amp; Tools</h3>
+            <div class="skill-item">
+              <span class="skill-item__name">C / C++</span>
+              <div style="flex: 1; padding-left: 1rem;">
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="70"></div></div>
+              </div>
+              <span class="skill-item__level">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__name">Java</span>
+              <div style="flex: 1; padding-left: 1rem;">
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="65"></div></div>
+              </div>
+              <span class="skill-item__level">Intermediate</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__name">SQL</span>
+              <div style="flex: 1; padding-left: 1rem;">
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="72"></div></div>
+              </div>
+              <span class="skill-item__level">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-item__name">VS Code</span>
+              <div style="flex: 1; padding-left: 1rem;">
+                <div class="skill-bar"><div class="skill-bar__fill" data-width="90"></div></div>
+              </div>
+              <span class="skill-item__level">Expert</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top: var(--space-lg);">
+          <h3 class="section__title" style="font-size: 1.6rem; margin-bottom: var(--space-md);" class="reveal">
+            <em>Certifications</em>
+          </h3>
+          <div class="certs__grid reveal-stagger">
+            <div class="cert-card">
+              <div class="cert-card__badge" aria-hidden="true">🏆</div>
+              <div>
+                <p class="cert-card__name">Getting Started with Web Development — Foundational Level</p>
+                <p class="cert-card__issuer">SAP &nbsp;·&nbsp; Issued: February 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="reveal" style="margin-bottom: var(--space-lg);">
+          <span class="section__label">Contact</span>
+          <h2 class="section__title">Let's <em>connect</em></h2>
+        </div>
+
+        <div class="contact__grid">
+
+          <div class="contact__info reveal reveal--left">
+            <a href="mailto:rishithbangari24@gmail.com" class="contact__item">
+              <div class="contact__item-icon" aria-hidden="true">✉</div>
+              <div>
+                <div class="contact__item-label">Email</div>
+                <div class="contact__item-value">rishithbangari24@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="tel:+918125307538" class="contact__item">
+              <div class="contact__item-icon" aria-hidden="true">📞</div>
+              <div>
+                <div class="contact__item-label">Phone</div>
+                <div class="contact__item-value">+91 81253 07538</div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/bangari-rishith-86610937b"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact__item">
+              <div class="contact__item-icon" aria-hidden="true">in</div>
+              <div>
+                <div class="contact__item-label">LinkedIn</div>
+                <div class="contact__item-value">bangari-rishith-86610937b</div>
+              </div>
+            </a>
+
+            <div class="contact__item" style="cursor: default;">
+              <div class="contact__item-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="contact__item-label">Location</div>
+                <div class="contact__item-value">Hyderabad, Telangana, India</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__cta reveal reveal--right">
+            <p class="u-mono u-gold" style="font-size: var(--fs-xs); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: var(--space-sm);">Open to opportunities</p>
+            <h3 class="contact__cta-title">Ready to build something <em style="color: var(--clr-gold);">great?</em></h3>
+            <p class="contact__cta-text">
+              Whether it's a freelance project, internship, or full-time role —
+              let's create something meaningful together.
+            </p>
+            <a href="mailto:rishithbangari24@gmail.com" class="btn btn--primary">
+              Send a Message →
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p class="footer__copy">© 2026 Bangari Rishith.</p>
+    <nav class="footer__links" aria-label="Footer links">
+      <a href="mailto:rishithbangari24@gmail.com" class="footer__link">Email</a>
+      <a href="www.linkedin.com/in/bangari-rishith-86610937b"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="footer__link">LinkedIn</a>
+      <a href="#hero" class="footer__link">Back to Top ↑</a>
+    </nav>
+  </footer>
+
+  <script src="portfoloio.js"></script>
+</body>
+</html>

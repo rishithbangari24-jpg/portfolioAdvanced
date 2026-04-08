@@ -1,0 +1,66 @@
+/* ============================================================
+   animations.css — Keyframes & Scroll Animations
+   ============================================================ */
+
+/* ── Keyframes ───────────────────────────────────────────── */
+@keyframes fadeUp   { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn   { from { opacity: 0; } to { opacity: 1; } }
+@keyframes shimmer  { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
+@keyframes float    { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@keyframes ripple-burst { to { transform: scale(4); opacity: 0; } }
+@keyframes blink    { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+/* ── Hero load sequence ──────────────────────────────────── */
+.hero__eyebrow { animation: fadeUp 0.7s ease forwards; animation-delay: 0.2s; opacity: 0; }
+.hero__name    { animation: fadeUp 0.8s ease forwards; animation-delay: 0.4s; opacity: 0; }
+.hero__role    { animation: fadeUp 0.7s ease forwards; animation-delay: 0.55s; opacity: 0; }
+.hero__desc    { animation: fadeUp 0.7s ease forwards; animation-delay: 0.7s;  opacity: 0; }
+.hero__actions { animation: fadeUp 0.7s ease forwards; animation-delay: 0.85s; opacity: 0; }
+.hero__scroll  { animation: fadeIn 1s ease forwards;   animation-delay: 1.2s;  opacity: 0; }
+.hero__scroll-line { animation: float 2.5s ease-in-out infinite; }
+.nav           { animation: fadeIn 0.6s ease forwards; animation-delay: 0.1s;  opacity: 0; }
+
+/* ── Shimmer gold text ───────────────────────────────────── */
+.shimmer-text {
+  background: linear-gradient(90deg, var(--clr-gold) 0%, var(--clr-gold-light) 40%, var(--clr-gold) 60%, var(--clr-gold-light) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+
+/* ── Avatar float ────────────────────────────────────────── */
+.about__avatar-frame { animation: float 5s ease-in-out infinite; }
+
+/* ── Typewriter cursor ───────────────────────────────────── */
+.typewriter-cursor { display: inline-block; width: 2px; height: 1em; background: var(--clr-gold); margin-left: 2px; vertical-align: middle; animation: blink 1s step-end infinite; }
+
+/* ── Scroll reveal ───────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal.reveal--left  { transform: translateX(-24px); }
+.reveal.reveal--right { transform: translateX(24px); }
+.reveal--visible { opacity: 1 !important; transform: none !important; }
+
+/* ── Stagger children ────────────────────────────────────── */
+.reveal-stagger > * { opacity: 0; transform: translateY(20px); transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1), transform 0.6s cubic-bezier(0.4,0,0.2,1); }
+.reveal-stagger.reveal--visible > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger.reveal--visible > *:nth-child(2) { transition-delay: 0.12s; }
+.reveal-stagger.reveal--visible > *:nth-child(3) { transition-delay: 0.19s; }
+.reveal-stagger.reveal--visible > *:nth-child(4) { transition-delay: 0.26s; }
+.reveal-stagger.reveal--visible > *:nth-child(5) { transition-delay: 0.33s; }
+.reveal-stagger.reveal--visible > *:nth-child(n+6) { transition-delay: 0.40s; }
+.reveal-stagger.reveal--visible > * { opacity: 1; transform: none; }
+
+/* ── Page transition ─────────────────────────────────────── */
+.page-transition-overlay { position: fixed; inset: 0; background: var(--clr-bg); z-index: 9000; transform: scaleX(1); transform-origin: right; transition: transform 0.6s cubic-bezier(0.77,0,0.18,1); }
+.page-transition-overlay--done { transform: scaleX(0); }
+
+/* ── Reduced motion ──────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .reveal, .reveal-stagger > * { opacity: 1; transform: none; }
+}
